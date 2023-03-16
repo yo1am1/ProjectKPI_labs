@@ -5,6 +5,8 @@ print('Програмування частина 2. Лабораторна ро�
 print("Трепалін Єгор. Варіант 10 (№23)\n")
 
 
+# TODO: UI with additional modules or tkinter (first option is better)
+
 def choice():
     """choose the way to create two lists"""
     que = str(input("""\nChoose the way to create your lists:
@@ -23,7 +25,6 @@ Input:"""))
 
 
 # region Variation of inputs
-# noinspection PyGlobalUndefined
 def random():
     """generates two random lists"""
     global list_0, list_1
@@ -87,8 +88,9 @@ def merge_lists(l1, l2):
             j += 1
         result = result + l1[i:] + l2[j:]
     return result
-# endregion
 
+
+# endregion
 
 def loop():
     global inp
@@ -105,17 +107,17 @@ def loop():
         inp = str(input('\nContinue? (Y/N): '))
 
 
-choice()
+if __name__ == "__main__":
+    choice()
+    lista = list_0
+    lista.extend(list_1)
+    # creating the list "lista" which contains list_0 and list_1 to check the answer
 
-lista = list_0
-lista.extend(list_1)
-# creating the list "lista" which contains list_0 and list_1 to check the answer
+    print('\nSorted result (merged lists):', list(dict.fromkeys(merge_lists(sorted(list_0), sorted(list_1)))))
+    # use sorted() function to input two sorted lists (list_0 and list_1) in
+    # "merge_lists(l1, l2)" function and remove duplicate elements with dict.fromkeys()
+    print('Comparison with quicksort:', list(dict.fromkeys(quicksort(lista))))
+    # output of the quicksort method to check the answer
 
-print('\nSorted result (merged lists):', list(dict.fromkeys(merge_lists(sorted(list_0), sorted(list_1)))))
-# use sorted() function to input two sorted lists (list_0 and list_1) in
-# "merge_lists(l1, l2)" function and remove duplicate elements with dict.fromkeys()
-print('Comparison with quicksort:', list(dict.fromkeys(quicksort(lista))))
-# output of the quicksort method to check the answer
-
-inp = str(input('\nContinue? (Y/N): '))
-loop() if (inp in ['Y', 'y']) else (print('Thank you for using this app!\n') and exit())
+    inp = str(input('\nContinue? (Y/N): '))
+    loop() if (inp in ['Y', 'y']) else (print('Thank you for using this app!\n') and exit())
