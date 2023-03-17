@@ -4,7 +4,7 @@
 print('Програмування частина 2. Лабораторна робота №1')
 print("Трепалін Єгор. Варіант 10 (№23)\n")
 
-import tkinter, customtkinter
+#import tkinter, customtkinter
 
 
 # TODO: UI with additional modules or tkinter (first option is better)
