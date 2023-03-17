@@ -1,4 +1,4 @@
-# ProjectKPI. Labs. First year
+# ProjectKPI. First year labs
 
 > KPI Kyiv Ukraine: “Programming 1”/"Programming 2" labs. 10 points. 
 
