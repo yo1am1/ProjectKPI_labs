@@ -11,6 +11,7 @@ takeLast() – видаляє та повертає останній елеме�
 і на основі цього класу реалізувати клас стек (Stack), у середині якого буде
 використовуватись зв'язаний список"""
 
+
 # IN PROGRESS - DO NOT USE
 
 
@@ -25,6 +26,7 @@ class Node:
 
 class ListOSC:
     """one-sided connected list"""
+
     def __init__(self):
         self.length = 0
         self.head = None
@@ -49,6 +51,7 @@ class ListOSC:
 
 class Stack(ListOSC):
     """child class of ListOSC()"""
+
     def __init__(self):
         pass
 

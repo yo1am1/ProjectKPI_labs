@@ -21,6 +21,7 @@ from math import sqrt
 
 class Point:
     """Parent class to child Line(point_a, point_b)"""
+
     def __init__(self, x, y):
         self.x = x
         self.y = y
@@ -31,6 +32,7 @@ class Point:
 
 class Line(Point):
     """Child class of parent Point(x, y)"""
+
     def __init__(self, point_a, point_b):
         super().__init__(point_a.x, point_a.y)
         self.point_b = point_b
@@ -65,4 +67,5 @@ if __name__ == "__main__":
     projAB_X = lineAB.pro_x()
     projAB_Y = lineAB.pro_y()
 
-    print(f"\n\033[7m{lineAB}\033[0m\n", f"\n\033[0;36m\033[0;31mResults:\033[0m \033[3m\n {lengthAB} \n {midpointAB} \n {projAB_X} \n {projAB_Y}\033[0m\033[0m")
+    print(f"\n\033[7m{lineAB}\033[0m\n",
+          f"\n\033[0;36m\033[0;31mResults:\033[0m \033[3m\n {lengthAB} \n {midpointAB} \n {projAB_X} \n {projAB_Y}\033[0m\033[0m")

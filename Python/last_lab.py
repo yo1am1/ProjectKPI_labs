@@ -19,7 +19,7 @@ print("Extend output: ", ls)
 
 def bulb():
     for q in range(len(ls)):
-        for i in range(len(ls) - 1-q):
+        for i in range(len(ls) - 1 - q):
             if ls[i] < ls[i + 1]:
                 ls[i], ls[i + 1] = ls[i + 1], ls[i]
     return ls

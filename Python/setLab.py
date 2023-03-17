@@ -17,7 +17,7 @@ vocabulary = ['Kyiv', 'Kharkiv', 'Odesa', 'Dnipro', 'Lviv',
               'Mykolaiv', 'Kherson', 'London', 'New York',
               'Tokyo', 'Paris', 'Osaka', 'Warszawa',
               'Ivano-Frankivsk']
-# I use "names" and "vocabulary" to create a random list
+# I use “names” and “vocabulary” to create a random list
 dec = 0
 
 
@@ -64,6 +64,8 @@ def random():
     # noinspection PyTypeChecker
     return print(
         f"{'-' * 40}\nAnswer: {dict(coli)}\n{'-' * 40}")
+
+
 # false positive from PyCharm, so I suppressed it
 
 
@@ -81,6 +83,8 @@ def basic():
         coli.append(tuple(emp))
     # noinspection PyTypeChecker
     return print(f"{'-' * 40}\nAnswer: {dict(coli)}\n{'-' * 40}")
+
+
 # false positive from PyCharm, so I suppressed it
 
 
