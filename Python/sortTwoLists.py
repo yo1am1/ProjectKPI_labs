@@ -5,11 +5,6 @@ print('Програмування частина 2. Лабораторна ро�
 print("name. Варіант 10 (№23)\n")
 
 
-# import tkinter, customtkinter
-
-
-# TODO: UI with additional modules or tkinter (first option is better)
-
 def choice():
     """choose the way to create two lists"""
     que = str(input("""\nChoose the way to create your lists:
