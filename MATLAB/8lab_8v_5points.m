@@ -1,4 +1,4 @@
-%ФЕ-21 Трепалін Єгор. Лабораторна робота №8. Варіант 8%
+%group name. Лабораторна робота №8. Варіант 8%
 
 a = input("Enter the a vector: ")
 c = input("Enter the c vector: ")

@@ -1,4 +1,4 @@
-%ФЕ-21 Трепалін Єгор. Лабораторна робота №8%
+%group name. Лабораторна робота №8%
 
 a = input("Enter the a matrix: ")
 c = input("Enter the c matrix: ")
