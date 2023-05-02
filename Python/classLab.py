@@ -1,7 +1,7 @@
 """
 Програмування частина 2. Лабораторна робота №3. name group. Варіант 3 (23 № у списку)
 """
-print('\033[1m\033[1;36mПрограмування частина 2. Лабораторна робота №3')
+print("\033[1m\033[1;36mПрограмування частина 2. Лабораторна робота №3")
 print("name. Варіант 3 (№23)\n\033[;0m")
 # ANSI color codes: https://gist.github.com/rene-d/9e584a7dd2935d0f461904b9f2950007
 
@@ -38,7 +38,9 @@ class Line(Point):
         self.point_b = point_b
 
     def __str__(self):
-        return f" AB is a line from point A{super().__str__()} to point B{self.point_b} "
+        return (
+            f" AB is a line from point A{super().__str__()} to point B{self.point_b} "
+        )
 
     def length(self):
         return f"Length: {sqrt((self.point_b.x - self.x) ** 2 + (self.point_b.y - self.y) ** 2)}"
@@ -57,8 +59,14 @@ class Line(Point):
 
 if __name__ == "__main__":
     print("\033[0;31mHere is your inputs:\033[0m")
-    pointA = Point(int(input(" Input X (int) of point A: ")), int(input(" Input Y (int) of point A: ")))
-    pointB = Point(int(input(" Input X (int) of point B: ")), int(input(" Input Y (int) of point B: ")))
+    pointA = Point(
+        int(input(" Input X (int) of point A: ")),
+        int(input(" Input Y (int) of point A: ")),
+    )
+    pointB = Point(
+        int(input(" Input X (int) of point B: ")),
+        int(input(" Input Y (int) of point B: ")),
+    )
 
     lineAB = Line(pointA, pointB)
     midpointAB = lineAB.midpoint()
@@ -67,5 +75,7 @@ if __name__ == "__main__":
     projAB_X = lineAB.pro_x()
     projAB_Y = lineAB.pro_y()
 
-    print(f"\n\033[7m{lineAB}\033[0m\n",
-          f"\n\033[0;36m\033[0;31mResults:\033[0m \033[3m\n {lengthAB} \n {midpointAB} \n {projAB_X} \n {projAB_Y}\033[0m\033[0m")
+    print(
+        f"\n\033[7m{lineAB}\033[0m\n",
+        f"\n\033[0;36m\033[0;31mResults:\033[0m \033[3m\n {lengthAB} \n {midpointAB} \n {projAB_X} \n {projAB_Y}\033[0m\033[0m",
+    )

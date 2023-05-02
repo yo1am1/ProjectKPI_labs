@@ -2,17 +2,18 @@
 Програмування частина 1. Лабораторна робота №7. name group. Варіант 7 (23 № у списку)
 """
 
-print('\nПрограмування частина 1. Лабораторна робота №7')
+print("\nПрограмування частина 1. Лабораторна робота №7")
 print("name. Варіант 7 (№23)")
 
 import math
 
 # модуль використовується лише для перевірки правальності значень
 
-print('\n' + "-" * 16, '\nFirst part (7.1)', '\n' + "-" * 16)
+print("\n" + "-" * 16, "\nFirst part (7.1)", "\n" + "-" * 16)
 
 
 # first part
+
 
 def fact(z):
     if z == 0:
@@ -52,13 +53,13 @@ while abs(a) > 0.00000000000001:
     n += 1
 print(f"\ne (without math) = {e}", "\ne (with math) =", math.e)
 
-x = float(input('\nx: '))
-z = float(input('z: '))
+x = float(input("\nx: "))
+z = float(input("z: "))
 
 while cos(z) == 0 or z == 2:
     print("\nРозв'язків немає. Повторіть спробу!")
-    x = float(input('\nx: '))
-    z = float(input('z: '))
+    x = float(input("\nx: "))
+    z = float(input("z: "))
 else:
     tg = sin(z) / cos(z)
     print("\nAns = ", x * tg + e ** (-(x + 3) / (z - 2)))
@@ -66,14 +67,14 @@ else:
 
 print("Ans with math = ", x * math.tan(z) + e ** (-(x + 3) / (z - 2)))
 
-print('\n' + "-" * 16, "\nSecond part (7.2)", '\n' + "-" * 16)
+print("\n" + "-" * 16, "\nSecond part (7.2)", "\n" + "-" * 16)
 
 # second part
 
 # Дано натуральне число N. Обчисліть суму його цифр. Не дозволяється використовувати
 # рядки, списки та цикли.
 
-a = int(input('\na = '))
+a = int(input("\na = "))
 
 
 def sum(a):
