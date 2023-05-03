@@ -9,20 +9,24 @@ print(
 затемнень в залежності від місяця"""
 
 
-months = [
-    sum([_ for _ in list_odd[0::12]]),
-    sum([_ for _ in list_odd[1::12]]),
-    sum([_ for _ in list_odd[2::12]]),
-    sum([_ for _ in list_odd[3::12]]),
-    sum([_ for _ in list_odd[4::12]]),
-    sum([_ for _ in list_odd[5::12]]),
-    sum([_ for _ in list_odd[6::12]]),
-    sum([_ for _ in list_odd[7::12]]),
-    sum([_ for _ in list_odd[8::12]]),
-    sum([_ for _ in list_odd[9::12]]),
-    sum([_ for _ in list_odd[10::12]]),
-    sum([_ for _ in list_odd[11::12]]),
-]
+def month():
+    """translates the number of months into months"""
+    global months
+
+    months = [
+        sum([_ for _ in list_odd[0::12]]),
+        sum([_ for _ in list_odd[1::12]]),
+        sum([_ for _ in list_odd[2::12]]),
+        sum([_ for _ in list_odd[3::12]]),
+        sum([_ for _ in list_odd[4::12]]),
+        sum([_ for _ in list_odd[5::12]]),
+        sum([_ for _ in list_odd[6::12]]),
+        sum([_ for _ in list_odd[7::12]]),
+        sum([_ for _ in list_odd[8::12]]),
+        sum([_ for _ in list_odd[9::12]]),
+        sum([_ for _ in list_odd[10::12]]),
+        sum([_ for _ in list_odd[11::12]]),
+    ]
 
 
 def data():
@@ -81,4 +85,5 @@ def plot():
 
 if __name__ == "__main__":
     data()
+    month()
     plot()
