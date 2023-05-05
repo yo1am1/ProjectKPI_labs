@@ -48,39 +48,38 @@ def data():
 
 def plot():
     """builds the plot"""
-    with plt.ion():
-        y = months
-        x = [
-            "jan",
-            "feb",
-            "mar",
-            "apr",
-            "may",
-            "jun",
-            "jul",
-            "aug",
-            "sep",
-            "oct",
-            "nov",
-            "dec",
-        ]
+    y = months
+    x = [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+    ]
 
-        plt.plot(
-            x,
-            y,
-            color="purple",
-            linewidth=1.0,
-        )
+    plt.plot(
+        x,
+        y,
+        color="purple",
+        linewidth=1.0,
+    )
 
-        plt.autoscale(enable=True)
-        plt.grid(True)
-        plt.scatter(x, y, color="green")
+    plt.autoscale(enable=True)
+    plt.grid(True)
+    plt.scatter(x, y, color="green")
 
-        plt.xlabel("Місяці")
-        plt.ylabel("Кількість затемнень, які відбулись із 1749 р.")
-        plt.title("Затемнення")
+    plt.xlabel("Місяці")
+    plt.ylabel("Кількість затемнень, які відбулись із 1749 р.")
+    plt.title("Затемнення")
 
-        plt.show()
+    plt.show()
 
 
 if __name__ == "__main__":
